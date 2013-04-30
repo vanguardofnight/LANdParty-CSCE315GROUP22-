@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+<a href="http://projects.cse.tamu.edu/crevia1/"><img src="Logo.png" alt="Are you game?" width="393" height="150"></a>
+<title>LANd Party- Find nearby games</title>
+<style type="text/css">
+body {background-color:gray}
+p {color:red}
+</style>
+</head>
+<hr>
+
 <body>
 
 <?php
 echo "Hullo!";
-
 
 require_once("facebook.php");
 
