@@ -1,5 +1,5 @@
 <?php
-  // require_once("facebook.php");
+	// require_once("facebook.php");
 	// if(is_callable('curl_init'))
 	// {
 		// echo "curl exists";
@@ -34,15 +34,17 @@
   $config = array(
   'appId' => '136730719847805',
   'secret' => 'eb120b2c585d641cfbbe1b29d3650b08',
-  'fileUpload' => false, // optional
+  'fileUpload' => true, // optional
   );
   //echo "config array instantiated";
-  // $facebook = new Facebook($config);
-  // echo "facebook created";
-  // $user_id = $facebook->getUser();
-  // echo "got user ". $user_id;
+  $facebook = new Facebook($config);
+ // echo "facebook created";
+  $user_id = $facebook->getUser();
+  $access_token = $facebook->getAccessToken();
+  //echo "got user ". $user_id;
 
   ?>
+  <!--
   <html>
 	<head></head>
 	<body>
@@ -100,25 +102,38 @@
 			 ref.parentNode.insertBefore(js, ref);
 		   }(document));
 		</script>
-		
+		-->
 	<?php
   //$me = null;
-  $user_id = $facebook->getUser();
+  //$user_id = $facebook->getUser();
   //echo $user_id;
 	if ($user_id) {
 		echo "attempting try";
 		echo "<br />";
 	  try {
-		$fql = 'SELECT location FROM user WHERE uid = ' . $user_id;
-		echo "fql created";
+		$fql = 'SELECT name FROM user WHERE uid = '. $user_id;
+		echo "$fql created";
 		echo "<br />";
+		// $param = array(
+			// 'method' => 'fql.query',
+			// 'access_token' => $cookie['access_token'],
+			// 'query' => $fql,
+			// 'callback' => ''
+		// );
+		// echo 'param = '. $param;
+		// $response = $facebook->api($param);
+		// print_r($response);
+		
+		// $ret = $facebook->api('/me/name', 'GET');
+		// echo "ret = " . $ret;
 		$ret_obj = $facebook->api(array(
                                    'method' => 'fql.query',
                                    'query' => $fql,
                                  ));
+		//print_r($ret_obj);
 		echo "ret_obj created";
-		echo "<br />";
-		echo '<pre>Location: ' . $ret_obj[0]['name'] . '</pre>';						 
+		// echo "<br />";
+		//echo '<pre>Location: ' . $ret_obj[0]['name'] . '</pre>';						 
 		$uid = $facebook->getUser();
 		$me = $facebook->api('/me');
 		} catch (FacebookApiException $e) {
