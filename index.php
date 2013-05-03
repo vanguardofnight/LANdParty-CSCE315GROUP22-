@@ -29,7 +29,8 @@
 	
 	require_once ("facebook.php");
 	//require_once ("xmlTest.php");
-	
+  
+  
  //echo "hello world2";
   $config = array(
   'appId' => '136730719847805',
@@ -38,13 +39,18 @@
   );
   //echo "config array instantiated";
   $facebook = new Facebook($config);
- // echo "facebook created";
   $user_id = $facebook->getUser();
   $access_token = $facebook->getAccessToken();
+ if ($user_id) {
+    $logoutUrl = $facebook->getLogoutUrl();
+} else {
+    $loginUrl = $facebook->getLoginUrl();
+}
+  
   //echo "got user ". $user_id;
 
   ?>
-  <!--
+  
   <html>
 	<head></head>
 	<body>
@@ -102,42 +108,33 @@
 			 ref.parentNode.insertBefore(js, ref);
 		   }(document));
 		</script>
-		-->
+		
 	<?php
-  //$me = null;
-  //$user_id = $facebook->getUser();
-  //echo $user_id;
+  
 	if ($user_id) {
-		echo "attempting try";
-		echo "<br />";
+		
 	  try {
 		$fql = 'SELECT name FROM user WHERE uid = '. $user_id;
-		echo "$fql created";
-		echo "<br />";
-		// $param = array(
-			// 'method' => 'fql.query',
-			// 'access_token' => $cookie['access_token'],
-			// 'query' => $fql,
-			// 'callback' => ''
-		// );
-		// echo 'param = '. $param;
-		// $response = $facebook->api($param);
-		// print_r($response);
-		
-		// $ret = $facebook->api('/me/name', 'GET');
-		// echo "ret = " . $ret;
 		$ret_obj = $facebook->api(array(
                                    'method' => 'fql.query',
                                    'query' => $fql,
                                  ));
-		//print_r($ret_obj);
-		echo "ret_obj created";
-		// echo "<br />";
-		//echo '<pre>Location: ' . $ret_obj[0]['name'] . '</pre>';						 
-		$uid = $facebook->getUser();
-		$me = $facebook->api('/me');
+		$user_name = $ret_obj[0]['name'];
+		echo '<pre>Name: ' . $user_name . '</pre>';	
+		$fql2 = 'SELECT current_location FROM user WHERE uid = '. $user_id;	
+		$ret_obj2 = $facebook->api(array(
+                                   'method' => 'fql.query',
+                                   'query' => $fql2,
+                                 ));		
+		$user_location = $ret_obj2[0]['current_location']['name'];
+		echo '<pre>Location: ' . $user_location . '</pre>';
 		} catch (FacebookApiException $e) {
-		echo "failed try, going to catch\n";
+		echo "<br />";
+		echo "Message: " . $e->getMessage();
+		echo "<br />";
+		echo "<br />";
+		echo $e->getTraceAsString();
+		echo "<br />";
 		echo "<br />";
 		$login_url = $facebook->getLoginUrl(); 
         echo 'Please <a href="' . $login_url . '">login 1.</a>';
@@ -147,21 +144,53 @@
 	} else {
 	// No user, so print a link for the user to login
       $login_url = $facebook->getLoginUrl();
-      echo 'Please <a href="' . $login_url . '">login 2.</a>';
+      echo 'Please <a href="' . $login_url . '">login.</a>';
 	  //$me = $facebook->api('/me');
-	  echo "me = " . $me;
+	  //echo "me = " . $me;
 	}
- 
-//4. login or logout
- // if ($me) {
-    // $logoutUrl = $facebook->getLogoutUrl();
-// } else {
-    // $loginUrl = $facebook->getLoginUrl();
-// }
-//require_once ("example.php");
-// $exampleUserLocation = 'Houston';
-// echo $exampleUserLocation;
-
+	//Save to XML
+	$locations_array = array();
+	$locations_array [] = array(
+		'name' => $user_name,
+		'location' => $user_location,
+	);	
+	
+	$doc = new DOMDocument();
+	$doc ->formatOutput = true;
+	
+	$r = $doc->createElement( "locations" );
+	$doc-> appendChild($r);
+	
+	foreach($locations_array as $locs)
+	{
+	$b = $doc->createElement("User");
+	$name = $doc->createElement("name");
+	$name -> appendChild($doc->createTextNode($locs['name']));
+	$b->appendChild($name);
+	$r->appendChild($b);
+	
+	$b = $doc->createElement("location");
+	$location = $doc->createElement("location");
+	$location -> appendChild($doc->createTextNode($locs['location']));
+	$b->appendChild($location);
+	$r->appendChild($b);
+	
+	}
+	$doc->save("locations.xml");
+	
+	//Load from XML
+	$doc = new DOMDocument();
+	$doc->load('locations.xml');
+	
+	$locations_array = $doc->getElementsByTagName("locations");
+	foreach($locations_array as $locs){
+		$locations = $locs->getElementsByTagName("location");
+		$location = $locations->item(0)->nodeValue;
+		
+		echo "location : " . $location;
+	}
+	
+	
 // if(file_exists('locations.xml')){
 	// $xml = new DOMDocument();
 	// $xml->load("locations.xml");
@@ -180,7 +209,7 @@
 	// $xml->appendChild( $xml_user );
 	// $xml->save("locations.xml");
     
-// }
+//}
 
   ?>
 	</body>
@@ -192,14 +221,14 @@
   <title>PHP Test</title>
  </head>
  <body>
- <?php if ($me): ?>
-    <?php echo "Welcome, ".$me['first_name']. ".<br />"; ?>
+ <?php if ($user_id): ?>
+    <?php echo "Welcome, ".$user_name. ".<br />"; ?>
     <a href="<?php echo $logoutUrl; ?>">
-      <img src="http://static.ak.fbcdn.net/rsrc.php/z2Y31/hash/cxrz4k7j.gif">
+      <img src="http://www.picturehealing.com/dashboard/app/Assets/fblogout.png">
     </a>
     <?php else: ?>
       <a href="<?php echo $loginUrl; ?>">
-        <img src="http://static.ak.fbcdn.net/rsrc.php/zB6N8/hash/4li2k73z.gif">
+        <img src="http://www.challengeyoursoul.com/images/facebooklogin.png">
       </a>
     <?php endif ?>
   <!-- <p> Run xmlTest <a href = "http://projects.cse.tamu.edu/chaveser/xmlTest.php">here</a><p> -->
