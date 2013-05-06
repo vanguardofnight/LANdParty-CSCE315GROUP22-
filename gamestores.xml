@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlaceSearchResponse>
+ <status>OK</status>
+ <result>
+  <name>Second Time Around</name>
+  <type>store</type>
+  <type>movie_rental</type>
+  <type>establishment</type>
+  <formatted_address>1133 Brown Street, Dayton, OH, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>39.7426010</lat>
+    <lng>-84.1828270</lng>
+   </location>
+  </geometry>
+  <rating>4.3</rating>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png</icon>
+  <reference>CnRvAAAAB2SaVI6jS9PrnqWfismRoyRvyNuGoc7OrDX8NOFVHocvLzir3yBmPfWZxCPL7YRirjkarW72o8jEFIz9L0H8p57j6tiTT8LkEP3cPqoH1qDDUPZS6-Sk-59oPNl3MApkeHRdfEVouq_uMpj3iVEH9hIQETvbay4eCJ9KDmhcfYWFIBoUMbOdUZfdfoTxPUrQ90p6ffzvXD8</reference>
+  <id>5a8cab849529fd9f1c68c7e030901e07cc1d8412</id>
+  <opening_hours>
+   <open_now>true</open_now>
+  </opening_hours>
+  <photo>
+   <photo_reference>CoQBcgAAAMtyrNuB2M-5ci5fRdJqobrlMdmbu70UILkmGG8BGZ6fipJ6-Hj54E3_JNT_zHz71sySEk8Qu2f0ss7ZCguPD2xlxu-2JdUeNs4zk436QIbyeflSp_MgVkA9av3DNzpSK-brkwgh9Fh4dkBKcLBFSVvltNdT4F4GRamgUjZj-HKiEhAW9r07ZPWQI7R6_7ZZipIDGhT4AuaSqLKWOk1uF2rpuY06Zk4TOA</photo_reference>
+   <width>1024</width>
+   <height>768</height>
+  </photo>
+ </result>
+ <result>
+  <name>Nintendo World</name>
+  <type>store</type>
+  <type>establishment</type>
+  <formatted_address>10 Rockefeller Plaza, New York, NY, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>40.7580630</lat>
+    <lng>-73.9794510</lng>
+   </location>
+  </geometry>
+  <rating>4.3</rating>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png</icon>
+  <reference>CnRrAAAAg15STACxIrv-A0YrsmBIdPm76o-huf4YGCLYPqLtVhJJJcYNfrQIKIgg7Sa7oJnjcPRrcTt2KdmHrVjWxbo43uhVzTKEigiIjPsTRvINdVHboKoyFe1_E7dbV8vfRaV4tHrdu4mwFr8e9POhWAdEEhIQRutTk9_P6xj3fT8pHzzEVRoUmvgmAy3bHEBP18z13l9AC8D8ryM</reference>
+  <id>fb78c7de2d5ed2d90570b173f1f2bbbf378786e1</id>
+  <opening_hours>
+   <open_now>true</open_now>
+  </opening_hours>
+  <photo>
+   <photo_reference>CnRqAAAAIsbJKZWCkzhT1n4W6omehHd4cnHUcPEQuCbCBg1l20RcU_DgBcF1szQckMyE6mlUDTiCEiSyL1sl6hK3zDTy5CUj2MfYtWciNzavAO1fTaqBRjFm4BjvaeFHW2ES8nx4Io0m79son6POA3e9HzLI0BIQ7X4CHpiHk7xJCdPA4-AedRoUpKgbkvGaaFCNL-x8uGzdNt2_XXk</photo_reference>
+   <width>2048</width>
+   <height>1225</height>
+   <html_attribution>&lt;a href=&quot;https://plus.google.com/106745841469283856044&quot;&gt;Mathias Borgmalm&lt;/a&gt;</html_attribution>
+  </photo>
+  <price_level>2</price_level>
+ </result>
+ <result>
+  <name>Fry's Electronics, Inc.</name>
+  <type>electronics_store</type>
+  <type>store</type>
+  <type>establishment</type>
+  <formatted_address>6845 Bruce Woodbury Beltway, Las Vegas, NV, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>36.0650930</lat>
+    <lng>-115.1748160</lng>
+   </location>
+  </geometry>
+  <rating>3.2</rating>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/electronics-71.png</icon>
+  <reference>CoQBdQAAALLrPk9m4Oh5KhdMp8aQmjDDY7APnsanOcTwysVsuJh06OKlrISm8lPLRFdpJOrPEB-7AD3Awhuv7K6rsb6u7B6cNylmVtpygRkMZGq88UoZPEttl0MmjSGNDQL0dShSW6eqWNvXewcBZrYkW71c6ldjgxfXuz_Sm02wtQxhWzOpEhDRCOK2LB_JLYBbBIKwNhdUGhRFhbZg0hSkVWx7mXl_WxxLtBSD1A</reference>
+  <id>2236c07162df5e43fd02f18675c63a0bb44a1f93</id>
+  <opening_hours>
+   <open_now>true</open_now>
+  </opening_hours>
+  <photo>
+   <photo_reference>CoQBdQAAAPq6tf4fWIJRtsUqbGhkSQt_Pz_L2DyPVRe8fWy1z8qYBqdbec7oP30MrXSGJAwu9fWGKWUzPFWcKDmOqf3tvAw4JIEMje45ZT1sCSVS23EV0C_9xZNpfC0UkpQzttwpu8SlkYWRZ0aFkz7w_gXo6hyYESVwUhcqBwHB6Fjmcpc6EhCMBTDYLF6QRpNLfDveRiMTGhTGIBiqqhpeVGD9d_b9eeedq5S4bA</photo_reference>
+   <width>1632</width>
+   <height>976</height>
+   <html_attribution>&lt;a href=&quot;https://plus.google.com/112072064996997284865&quot;&gt;Paul Jr Castro&lt;/a&gt;</html_attribution>
+  </photo>
+ </result>
+ <result>
+  <name>Graywhale Entertainment</name>
+  <type>store</type>
+  <type>movie_rental</type>
+  <type>establishment</type>
+  <formatted_address>208 South 1300 East, Salt Lake City, UT, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>40.7643950</lat>
+    <lng>-111.8542680</lng>
+   </location>
+  </geometry>
+  <rating>3.3</rating>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png</icon>
+  <reference>CoQBdAAAAB-bXNG3eq4nPdCzlueEX31wlNiQUBMHtDpB7a42US42NK1PIjKhBMyOMFHRTIQxP8eky5vJ6og6hxX7gAIlGuA4HB6wWW8K5ziVTmRmCkQ-9cNC_W3Y1YNAn-2R9Q0GpZNeqjmaCRRgKYUrJ1sgAOMx7_AgSFGob7Ai_DaaOW3iEhDI56Tn1pOTOdDdgKNrZsiZGhTj9hFC7XnOoDOqByaTjrSmQzXPSQ</reference>
+  <id>b973be7de981af18b8f087a555b572e98775384c</id>
+  <opening_hours>
+   <open_now>true</open_now>
+  </opening_hours>
+  <photo>
+   <photo_reference>CnRoAAAA5g9IBxV-EHQBgvYvNK7pOJoQrzH2C-a-dlhG6NJQpe0VV-FhDiWHhosRUW3VRJM-zbuTwe4NKBA5n8AKo0rzchRw7OeFUgXPVfVfdo0iSKe-knBOsb4rCIozes_umRB3iQOYgCPgQhgmPSEbAxdXABIQHBKmquARoSvgYNk52WewERoUkLXIAl2lHP91R_xJAYb_DfC6VeQ</photo_reference>
+   <width>1632</width>
+   <height>1224</height>
+   <html_attribution>&lt;a href=&quot;https://plus.google.com/109982327955983608143&quot;&gt;Charles Uibel&lt;/a&gt;</html_attribution>
+  </photo>
+ </result>
+ <result>
+  <name>Amoeba Music</name>
+  <type>store</type>
+  <type>establishment</type>
+  <formatted_address>1855 Haight Street, San Francisco, CA, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>37.7689220</lat>
+    <lng>-122.4526200</lng>
+   </location>
+  </geometry>
+  <rating>4.3</rating>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png</icon>
+  <reference>CnRqAAAAoEtjNE-TXh8F_QM8CrwPjoFue58PQfpTXwWfjbu4dq0zD1OC8mlBz6itah31154-QhBFpCNREh_yS9sJB8HVMPoWebTpFKw2hNY1s7TZulGWyJScKxVWj0kWo08M-fSKAO1oosq2sWkoN0-jgJYB1hIQwtvLaqtsjQxazzKKwpmByBoUeDPSvBmHoXEU5dmySNr9KjiI0c4</reference>
+  <id>8c09fd30cd54da6a12ea940abd4677a8cf79645b</id>
+  <opening_hours>
+   <open_now>true</open_now>
+  </opening_hours>
+  <photo>
+   <photo_reference>CnRpAAAAPensWcnvPOa0vPeGZBPgKC6cbaO3FdyPrC5lMK1s8Va8hiDGyvCyvbwCjfSGJkInr9bCA2RiW8WYtOlN58SEt5fxUCDdqOEd6bpEo1vMpoF7XMjn56nk7eJVxYCr5CE_zBsTBwBJ00C34saUx6h5DRIQ0CW1DW5qjrfXfhzYNlmh3BoUzzPGOKF6khswzl0EqiCykMxXqjI</photo_reference>
+   <width>435</width>
+   <height>289</height>
+  </photo>
+ </result>
+ <result>
+  <name>Thrifty Joe's Books &amp; Music</name>
+  <type>book_store</type>
+  <type>store</type>
+  <type>establishment</type>
+  <formatted_address>6020 West Bell Road, Glendale, AZ, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>33.6388470</lat>
+    <lng>-112.1879780</lng>
+   </location>
+  </geometry>
+  <rating>3.2</rating>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png</icon>
+  <reference>CoQBeQAAANZJga3mZmNqkf4psiCzCaJxxCEjpPcrPhdr5WS2GhmfRhZ6J75fyS9GYqKAsZgzEiLHPtjmKBXgkWYg_IdI5ZinE25ZHXx00pzOZ9xx8-VY_XOVxRP2bqXE69D2lsz-m3JC0yvyqyfIOn8nKhV6QiATbluh2a0AtV6GfIbnlK8mEhBitgCb_YDDYQQbs6cPaxyjGhQ50s2q0Ngz6_C2p5vKN6-yB7ezHg</reference>
+  <id>62055c57e198b8606053db13ddd685b49e276cc9</id>
+  <opening_hours>
+   <open_now>true</open_now>
+  </opening_hours>
+ </result>
+ <result>
+  <name>Bandera Super Bowl</name>
+  <type>store</type>
+  <type>bowling_alley</type>
+  <type>bar</type>
+  <type>establishment</type>
+  <formatted_address>6700 Huebner Road, San Antonio, TX, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>29.4965530</lat>
+    <lng>-98.6248150</lng>
+   </location>
+  </geometry>
+  <rating>3.0</rating>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/bowling-71.png</icon>
+  <reference>CnRwAAAARXIAMBQGs2gZFt3Gnn9JxbMyJ04geFtZwHFr8bcMstSCojENmXJEHYVxhw3C0sV-YT-JEHhTsm8gQzcrjWtAaIS9TgrZytN5i8bWCMR-grYCPFA4ymO_2hul86hZq_NncKRnIMbT7djRbE5RLljXcxIQkufOfJ7q9ocNWi8PU95ImhoUQr1vERmidVE6jz-OKne698WMBsU</reference>
+  <id>6ee22b2a37f58adfc1c2edcd2c8011f2e5d2e1f6</id>
+  <opening_hours>
+   <open_now>false</open_now>
+  </opening_hours>
+  <photo>
+   <photo_reference>CoQBdAAAACMG-uLgLyez8uwxGC44Dya1O_M9BVN2E8MpW_UBErHLKbE2ktJy3RhvVbxJ0hkZ82PQIggYrFlG_CvVI5cfSb88meZW9tisv5PZkSK--mXe5MHipYw1NRK4-N9pvwzparhtGdeOlSs_ckf9GpA9YO27efxoAjVgGRAHMjb4vg8QEhDWZ7rBZvWs72tggLqn7PELGhQUsfk7_Ik_Y1NhgrbHtyzLTwDp7A</photo_reference>
+   <width>1024</width>
+   <height>768</height>
+   <html_attribution>&lt;a href=&quot;https://plus.google.com/110711926768774602953&quot;&gt;Johnathan Cervantes&lt;/a&gt;</html_attribution>
+  </photo>
+ </result>
+ <result>
+  <name>Fry's Electronics</name>
+  <type>book_store</type>
+  <type>home_goods_store</type>
+  <type>car_repair</type>
+  <type>electronics_store</type>
+  <type>store</type>
+  <type>establishment</type>
+  <formatted_address>6100 Canoga Avenue, Woodland Hills, CA, 91367, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>34.1813980</lat>
+    <lng>-118.5959610</lng>
+   </location>
+  </geometry>
+  <rating>3.2</rating>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png</icon>
+  <reference>CnRuAAAAT-UD4CFKLK4FyvJlwEnQEX7Dk9hHiZqRmgfOnkzF8-RC6K7DqsmTNku0_XY0Idw0K5uuwMSGwJSTxkjCCjLlR2PAX2GlXGg8IBVBZ3lSMnizcwhyCao6QwcNxXEwT3lKkm6PG_ryRZg0LPxK8spnSBIQ5jKIERzkDZ_kBDEuqKiGkhoUC6VGgceibL7ER5VTAQ9IK05gf58</reference>
+  <id>6c648cb263c04f478a0304da0b0d3f769a7a49d4</id>
+  <opening_hours>
+   <open_now>true</open_now>
+  </opening_hours>
+  <photo>
+   <photo_reference>CoQBdQAAAHRq3imcO_Aln3LgInvrSdfTk9zHZjXtOutyqycKmUZMujiHcgykRxuuwxTvwh-faUfBi1GoceOzgCmLSgwtf0VI1JlBz-1iE7svJv2Zk87_tzDV_WV6mmSEpPNTFvz1VoOJN1qRCvz9rT4TMfvG0aMorEGrRIv882WuR5zUHoh7EhDj2qWTmzCWHiR0ko78l0P8GhRRD3Yu4wDIJqTN1fq0Ni3y9qHTOw</photo_reference>
+   <width>1629</width>
+   <height>1222</height>
+   <html_attribution>&lt;a href=&quot;https://plus.google.com/117554056171763955393&quot;&gt;Andrey Popovich&lt;/a&gt;</html_attribution>
+  </photo>
+ </result>
+ <result>
+  <name>Best Buy</name>
+  <type>home_goods_store</type>
+  <type>electronics_store</type>
+  <type>store</type>
+  <type>establishment</type>
+  <formatted_address>6025 East Broadway Boulevard, Tucson, AZ, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>32.2223580</lat>
+    <lng>-110.8639800</lng>
+   </location>
+  </geometry>
+  <rating>2.2</rating>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png</icon>
+  <reference>CnRmAAAACDrws_Raa7uu4FGD34O3Tiy9i0jYmTAo9WUJwg1kg2V42xqyLu8gAvIW1ruD5D-ekC9Cm1A0s6zQyA0KIRB6Q9do1VPXCrcoUVkyoA8xBO_wHpF78Fih4-1ta8Wxy3yIK7y8BY7lMIyXMQEJUrVy9RIQgDUREnBhc3eQwh2J9rhfLxoU1avtdq8kUrMEC7TIH7B5U2aafsw</reference>
+  <id>0e7de86af2a4be63de9d794f682794ce9efd0459</id>
+  <opening_hours>
+   <open_now>true</open_now>
+  </opening_hours>
+  <price_level>2</price_level>
+ </result>
+ <result>
+  <name>PlayNTrade Video Games</name>
+  <type>store</type>
+  <type>establishment</type>
+  <formatted_address>247 East Colorado Boulevard, Pasadena, CA, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>34.1459440</lat>
+    <lng>-118.1452500</lng>
+   </location>
+  </geometry>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png</icon>
+  <reference>CoQBcwAAAMQvm5zVBhyI-4R6FBljuw-jRPpVt2vr-m7qyE-EGP-cUQ__fW9bXgnEwpqsbF_R-e1IlvmBb7RTDOGGmnCGXNR1Jxax36rhkC6meXToaJnq0PTYXYH33-IPL-FHe7T8VsQd5F9IplasxD1_PmDcqJ0HUuqUgm2Kn7r9CuVUjulfEhAX1hRhXXA-kdxjRSV5aEUSGhS62uI5Mgok7Q5-3hENCz_KD3uruQ</reference>
+  <id>fa431f413ab75459066ad193163501557a0052f0</id>
+ </result>
+ <result>
+  <name>F.Y.E.</name>
+  <type>store</type>
+  <type>establishment</type>
+  <formatted_address>100 South Broad Street #1, Philadelphia, PA, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>39.9508160</lat>
+    <lng>-75.1641390</lng>
+   </location>
+  </geometry>
+  <rating>3.7</rating>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png</icon>
+  <reference>CnRkAAAA2r6dRp8m37UxwHU0h3uXMemrBLbMpxu6KEpCRV6rDvoNYFX0oR1wIAhyqCgzQMfF185lfvJhHBN-FP-Xx_hPcdAasyGhwEyo4YA66YINcw_smp49XIRvN7aYRIjUH9zRJxR7FvPzb1mrOiZFrEuZPBIQc820YyVpeUkSOCnKvP-6FhoUtTN8GX-t-pcRUIS3TWCmrg-X2SM</reference>
+  <id>bd4e2960109c2b7f25924c2983701cef96ac5bf1</id>
+  <opening_hours>
+   <open_now>true</open_now>
+  </opening_hours>
+  <price_level>2</price_level>
+ </result>
+ <result>
+  <name>Game Over Videogames</name>
+  <type>store</type>
+  <type>establishment</type>
+  <formatted_address>911 West Anderson Lane #106, Austin, TX, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>30.3477110</lat>
+    <lng>-97.7144630</lng>
+   </location>
+  </geometry>
+  <rating>4.3</rating>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png</icon>
+  <reference>CoQBcgAAAJSkx57qh8Mr0ZGlDc2MVYjqpmtv9DQQy17D2m8V5t6XYWQGsxBkmvRZI8as-0QGKvnXi4WG_MJ9y5SoPNfzuFL-fehAouNd9Er0TobN2xkh35EksCdgYgJm--2zPza7LDv_mRgAf4H6w792uw5UAeqIOW6qFSOH0TElB7n8qaAjEhDE2Wg4djvw3biqwJjElIBjGhS7lqzd4lwLRXzCTaEaQAEJlEl0TQ</reference>
+  <id>2e326ec0869d807c7e12040907951861227b2141</id>
+  <opening_hours>
+   <open_now>true</open_now>
+  </opening_hours>
+  <photo>
+   <photo_reference>CsQBtQAAADgdBw1QrGRa2lRj0WVxFjOABJ7WPLDvF7P_s0UFfqhEQeTYDOVhywlTbiXnAhoU26IBkTYliBrIuICUWa8ojsLLZCCQt62-xcLHrlQpFwepLjqdSedad_KoykOVvR_v10IcBXo0XouKk1AtzZrCGXj6JoJ-D8PkmTOUOjPHvjwVWdJPsUZ1Dh4z6KAUcJkf6Q-pW_wTVEP1_b19a-IjiOJVwZ2tdd2Y3jpZEuR59RxG4XAX3esVbKu3fAzG6B-JhxIQ6Gb18Uhqg3WDybQNmfWRZxoUo_KNUzFArzoLrSY4U-TTbWDmQyM</photo_reference>
+   <width>614</width>
+   <height>427</height>
+  </photo>
+ </result>
+ <result>
+  <name>Guardian Games</name>
+  <type>store</type>
+  <type>establishment</type>
+  <formatted_address>303 Southeast 3rd Avenue, Portland, OR, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>45.5206510</lat>
+    <lng>-122.6628600</lng>
+   </location>
+  </geometry>
+  <rating>4.6</rating>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png</icon>
+  <reference>CnRsAAAAW6s2ReGkWSt7ZFEq2VoEkCJjz0m7F7QOsUtcmdraqhRVbk4_zKygs_46V_hJzSIEXYhuy13JtTEUTLjzrN1m2j3JFGMp73EgSCTbR-vNYNDEu403sSsTWGQRsj2nDIsYSWNyLyOQmOE-xhWehQKjRRIQlUn1wjTAgCkHZIcLO6fuUBoUFcVFW6eOUcW026IP0VBn9TwSaRE</reference>
+  <id>5c4f42fdbaec0a41c96d064337e84ea1130e3f90</id>
+  <opening_hours>
+   <open_now>true</open_now>
+  </opening_hours>
+  <photo>
+   <photo_reference>CnRuAAAAUl2Gp55B1UQsYl_8hBMhHcNb2jya8VrL26V3ZWpGAzVMpMTnbSmMZ99otP2CFZJunXiToke-y4EZIUj0jxaRXcnzqf4HF5fIqeQNXRSj4xSKQxmsw0XX_MalpCnLRckM3vmHPqrKvUc1WaJRXUWLixIQ8KktwuzOayz8CktdsTc6ihoUGWMUOIUskhWmumcGIfA7GA0Qug8</photo_reference>
+   <width>621</width>
+   <height>786</height>
+  </photo>
+ </result>
+ <result>
+  <name>Major Records &amp; Video</name>
+  <type>store</type>
+  <type>establishment</type>
+  <formatted_address>1351 Forest Avenue, Staten Island, NY, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>40.6266390</lat>
+    <lng>-74.1350710</lng>
+   </location>
+  </geometry>
+  <rating>5.0</rating>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png</icon>
+  <reference>CoQBcgAAALzamepDHa-UXSCzkjaPtgwioAzZQD-BxzYYzPltn2ZuPyuzDKJeL3KD9swnRanpPzBTZOD2DKfWbJqgvFSm2X1URePS9pBXXl3LQIoxrXojIpHXUy0M0aR1_Y1gQPzmVcJwj0pldT-PnNViFerVRea6ApJfEnxEGofUFHsSBvJfEhBps06rWNjXB-ExDb5KcmDHGhQ5TyrwAaWyeW0ykELVyQ_dGXdIrA</reference>
+  <id>4a07711d2af1b10c4d43a93e5b02db78207fde70</id>
+  <opening_hours>
+   <open_now>true</open_now>
+  </opening_hours>
+  <photo>
+   <photo_reference>CoQBfQAAAG4n81oKEo79YriFPmh20UPKOeRZlvZemGCu8pp1SDI6ru5x9dQy1j9pvXEatxDse2JqO6U0mt_OlG_tZl1qdzbCK2UV-HlXGRrrs-mrPwR-9-zMZIPgtSC7mWk4958ZwQwkXHycGBSP_a3H37aopeqY17hHlX94Ns9gl9ZZmQNNEhB9Da4CCeO512-kJAXGroqMGhRdkFlMqvsP09N6YxcQXiR3vnisMg</photo_reference>
+   <width>232</width>
+   <height>169</height>
+  </photo>
+ </result>
+ <result>
+  <name>Toys&quot;R&quot;Us</name>
+  <type>book_store</type>
+  <type>store</type>
+  <type>establishment</type>
+  <formatted_address>4000 South Maryland Parkway, Las Vegas, NV, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>36.1167780</lat>
+    <lng>-115.1367570</lng>
+   </location>
+  </geometry>
+  <rating>3.0</rating>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png</icon>
+  <reference>CnRmAAAAp9KkFaGfUa13ct-7jkmzzBA6gM7WtEAOi4stBMiE8b8PbED9FIkRfTGUmz7ptdfCDPTYHdRMwc4pOEhCP4eY9r7fNmYcLeaLOQP8_wAbM-K9K0JW_xw88K2JNhBjsoREDi_2PAJ6yE7Tv_UNCyGbWBIQL1akCtDW2Bs1w-Pnl4orvhoUAkpAZ9nb3x6C7TAQUGxp87qEVh0</reference>
+  <id>9c761b89d204110d7e667fe1f429252131697f11</id>
+  <opening_hours>
+   <open_now>true</open_now>
+  </opening_hours>
+  <price_level>2</price_level>
+ </result>
+ <result>
+  <name>Luna Video Games</name>
+  <type>store</type>
+  <type>establishment</type>
+  <formatted_address>4847 Newport Avenue, San Diego, CA, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>32.7453600</lat>
+    <lng>-117.2484120</lng>
+   </location>
+  </geometry>
+  <rating>4.5</rating>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png</icon>
+  <reference>CnRuAAAArM6UYXdxp_nuX3ICltgSKxk9-s2bpNF8hMS2T3w5OVbdAVLFtMHowLB7g_LGi_GEneFSx-l1Yjie5sPaXz0-bvve45KWqgqj5Oejx1Yonxxyb1f7UA602u43mTfmuc2F4swnuDYMSXgAk-BN9l8GHhIQvcV6EwlRq7DJg20hb2Yh2BoUZokLhd3XMEP3XE_bBqZK6-1fTDE</reference>
+  <id>5b8f2c3b21f4f5ba58a127c50089bcd9f11aafe0</id>
+  <opening_hours>
+   <open_now>true</open_now>
+  </opening_hours>
+ </result>
+ <result>
+  <name>GameStop</name>
+  <type>store</type>
+  <type>establishment</type>
+  <formatted_address>9160 Rosedale Highway #700, Bakersfield, CA, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>35.3854240</lat>
+    <lng>-119.1043280</lng>
+   </location>
+  </geometry>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png</icon>
+  <reference>CnRmAAAAiXOwX5LOv4Pa-jOKIYUFjYswa_J_SGGIEvwota-oQe0T6Dd4MKBbFnvdxWRPZZUJtLwln1G2IR_wnqPkE_dtCs7y7wjt70pLsSl0q-77raPHHO7DQwJ9hbhN4BAV53eTiCuUF65OVIVwNhhaCS1OWxIQQTC_fCdCPL_RMGiH3HwT1RoU_rz9cnyOtNTw_1Dd6rHHjz_ZAG0</reference>
+  <id>b2cddc4a052e5cbb2e5d33a8974dd90550f8f2a4</id>
+  <price_level>2</price_level>
+ </result>
+ <result>
+  <name>Bookmans Entertainment Exchange</name>
+  <type>book_store</type>
+  <type>store</type>
+  <type>cafe</type>
+  <type>food</type>
+  <type>establishment</type>
+  <formatted_address>1520 Riordan Ranch Street, Flagstaff, AZ, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>35.1860110</lat>
+    <lng>-111.6592510</lng>
+   </location>
+  </geometry>
+  <rating>4.0</rating>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png</icon>
+  <reference>CoQBfQAAAJQA9PpkyfcDWJIl9TjZTDpcGuDUqPPvotjNhWH5PxlzQjURlZc1IBDKrhCaFAUc3oq-zfNTcY0AGe--9kNlj7xDpehYDCYhPZpfQU2ZFWRnPmTWHX6Cl9u2ARltWF7TEhm1aXcGSJr2wQVM_OEGmiDVdNL8WgVBeNp8MwUZQcKSEhBkTQJFjygKhZ7ST801FfnHGhQKYot6Xss91ohbC6lO21myAIFtXA</reference>
+  <id>20f6aa98b15a35f1b8048b5d830276e90555d06e</id>
+  <opening_hours>
+   <open_now>true</open_now>
+  </opening_hours>
+ </result>
+ <result>
+  <name>Toys N' Joys</name>
+  <type>store</type>
+  <type>establishment</type>
+  <formatted_address>3632 Waialae Avenue #201, Honolulu, HI, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>21.2826100</lat>
+    <lng>-157.7983930</lng>
+   </location>
+  </geometry>
+  <rating>2.9</rating>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png</icon>
+  <reference>CnRqAAAArRC1emLGtcPXVUFUVEN9aVx-QGyfYkaVhztEqPEsC6uoLgJnF9FNiL5BYiX46jLT_ZJrXxE4D_Gag9g77kncIcB-hzRYjkwgnTbGF4BSxpn5YhXz9OZpOYfEzMK4zJ_MG9asKQdZ631QkH6MT75NBBIQhRyz2oviJm0oRDz5_zqe_BoUS2hKw1_3SWIaNVGS5LQCaK5DJHE</reference>
+  <id>32cb17c4539d6796614c68cfb4f9753c298a2c06</id>
+  <opening_hours>
+   <open_now>true</open_now>
+  </opening_hours>
+ </result>
+ <result>
+  <name>The Time Capsule</name>
+  <type>book_store</type>
+  <type>store</type>
+  <type>establishment</type>
+  <formatted_address>537 Pontiac Avenue, Cranston, RI, United States</formatted_address>
+  <geometry>
+   <location>
+    <lat>41.7725090</lat>
+    <lng>-71.4372080</lng>
+   </location>
+  </geometry>
+  <rating>4.8</rating>
+  <icon>http://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png</icon>
+  <reference>CnRtAAAABq8tzDvaxRXxSv3XAIH8FbMpB8_HApwNpO1bEulPl82DAXj737w12J0oCUy79QFN3MI-6xVyIQEv8bUq8f3t8DLGzgTJ6GHglrtNV6g9QD6XKfI-LPM1r9IkNiFthF4gNdSsFujSZEjV_-Y98JkQ8xIQHWYCy_yIiBl2l4j9zy2iVBoUU7Q0RHsSEtdtshE-OwEDvDmP7gk</reference>
+  <id>985d517085d47a72335be93c734c6b52edba0310</id>
+  <opening_hours>
+   <open_now>false</open_now>
+  </opening_hours>
+  <photo>
+   <photo_reference>CoQBcgAAAKjJxI2kl03ld1DVx9SE8dic2AVC2ehJ1dzoIVaubO6MggpnktjWBLWxaVCYUKf285Gt4my4XKBo00ev7joxYKwcdwDDRXBtLmY0UbG6uJgX5itZvXlBPZxYTwDqmflyinpHQOAelOrAfYpb2j2dkzw4PaAxw2ooYKSdGVLjxcH8EhA25EX_YHxDxYnmREFsLFEtGhTmUtUv5h9Lwf0xssMVAA88eiCljg</photo_reference>
+   <width>691</width>
+   <height>518</height>
+  </photo>
+ </result>
+ <next_page_token>CkQ2AAAATwzSnU98WUOctXXgTI4GxgakGGi1LA9ZCTVrafm7o0zCgf2_0gehk2UNChFJJbZBgo27wOxSkIqZtCXc5zufPBIQGvsElbHhmhIIp2J7fkJsBxoU71P8b2z62s4FCqNRnc6Wyj1qnlI</next_page_token>
+</PlaceSearchResponse>
