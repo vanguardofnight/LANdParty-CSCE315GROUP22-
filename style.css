@@ -17,7 +17,8 @@ gray is
 body {
 	margin: 0;
 	padding: 0;
-	background: black;
+	background-image:url('our_images/starfield.jpg');
+	background-repeat: repeat;
 	font-family: 'Oxygen', sans-serif;
 	font-size: 13px;
 	color: #8A8985;
@@ -53,7 +54,7 @@ ul, ol {
 
 a {
 	text-decoration: none;
-	color: #5BA689;
+	color: gray;
 }
 
 a:hover {
@@ -61,12 +62,14 @@ a:hover {
 
 #wrapper {
 	overflow: hidden;
-	background: black;
+	background-image:url('our_images/starfield.jpg');
+	background-repeat: repeat;
 	/*background: #F1F2E9;*/
 }
 
 .container {
-	width: 1200px;
+	min-width: 75%;
+	/*width: 800px;*/
 	margin: 0px auto;
 }
 
@@ -78,7 +81,7 @@ a:hover {
 }
 
 #header {
-	width: 960px;
+	/*width: 960px;*/
 	height: 200px;
 	margin: 0 auto;
 	padding: 0px 20px;
@@ -99,6 +102,8 @@ a:hover {
 /* Logo */
 
 #logo {
+	width: 400px;
+	margin: 0 auto;
 	overflow: hidden;
 	height: 250px;
 }
@@ -115,7 +120,7 @@ a:hover {
 }
 
 #logo p {
-	margin-top: -20px;
+	/*margin-top: -20px;*/
 	padding: 0px 0px 0px 5px;
 	font-size: 20px;
 	font-weight: 300;
@@ -199,6 +204,8 @@ a:hover {
 #menu {
 	overflow: hidden;
 	height: 52px;
+	/*width: 700;*/
+	margin 0 auto;
 }
 
 #menu ul {
@@ -214,8 +221,10 @@ a:hover {
 }
 
 #menu a {
+	/*width: 250px;*/
+	margin: 0 auto;
 	display: block;
-	padding: 0px 30px;
+	padding: 0px 20px 20px 20px;
 	line-height: 52px;
 	border: none;
 	text-decoration: none;
@@ -243,32 +252,43 @@ a:hover {
 #page {
 	overflow: hidden;
 	padding: 20px 20px 40px 20px;
+	min-width: 75%;
+	margin: 0 auto;
 }
 
 /* Content */
 
 #content {
-	float: left;
-	width: 752px;
-	padding: 0px 0px 0px 0px;
+	clear: both;
+	/*float: left;*/
+	width: 75%;
+	padding: 0px 30px 0px 0px;
+	margin: 0 auto;
 }
 
 .post {
 	overflow: hidden;
+	min-width:75%;
+	margin: 0 auto;
 }
 
 .post .title {
-	margin: 0px 0px 30px 0px;
 	padding: 0px 0px 10px 0px;
-	border-bottom: 3px solid #E0E1D6;
-	text-shadow: 1px 1px 0px /*#FFFFFF*/white;
+	border-bottom: 3px solid /*#E0E1D6;*/ #114411;
+	text-shadow: 1px 1px 0px #114411;
 	font-size: 26px;
-	color: /*#373737*/white;
+	color: white;
 }
 
 .post .title a {
 	border: none;
-	color: #373737;
+	color: gray;
+}
+
+.post a:hover {
+	color: white;
+	text-shadow: none;
+	text-decoration: underline;
 }
 
 .post .meta {
@@ -411,6 +431,7 @@ a:hover {
 /* Footer */
 
 #footer {
+	background: black;
 	height: 100px;
 	margin: 0 auto;
 	padding: 50px 0px 0px 0px;
@@ -421,13 +442,13 @@ a:hover {
 	padding-top: 10px;
 	line-height: normal;
 	text-align: center;
-	text-shadow: 1px 1px 0px #FFFFFF;
-	color: #909090;
+	text-shadow: 1px 1px 0px #114411;
+	color: #606060;
 }
 
 #footer a {
 	text-decoration: underline;
-	color: #909090;
+	color: #606060;
 }
 
 #footer a:hover {
@@ -489,6 +510,25 @@ a:hover {
 	background: url(images/img04.png) no-repeat center bottom;
 }
 
+/*Three Column Content*/
+
+#two-column {
+	overflow: hidden;
+	padding: 0px 30px 30px 30px;
+}
+
+#two-column:hover {	
+}
+
+#two-column #tbox1 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+#two-column #tbox2 {
+	margin-bottom: 20px;
+}
+
 /* Three Column Content */
 
 #three-column {
@@ -498,38 +538,62 @@ a:hover {
 
 #three-column #tbox1 {
 	float: left;
-	width: 384px;
+	width: 31%;
+	margin-left: 20px;
 	margin-right: 20px;
+	height: 60%;
+	max-height: 600px;
 }
 
 #three-column #tbox2 {
 	float: left;
-	width: 384px;
+	width: 31%;
+	margin-right: 20px;
+	height: 60%;
+	max-height: 600px;
 }
 
 #three-column #tbox3 {
-	float: right;
-	width: 384px;
+	float: left;
+	width: 31%;
+	height: 60%;
+	max-height: 600px;
 }
 
 .box-style {
 	background: /*#3C342E*/ #114411/*, #660099*/;
+	margin: 0 auto;
+	max-width: 800px;
+	min-width: 80%;
+}
+
+.box-style:hover {
+	background: black;
 }
 
 .box-style01
 {
-	border-bottom: 5px solid /*#DE5635*/ #119977 /*maroon*/;
+	border-bottom: 5px solid /*#DE5635*/ #888888 /*#119977*/ /*maroon*/;
 }
-
 
 .box-style02
 {
-	border-bottom: 5px solid #F8AF00;
+	border-bottom: 5px solid #119977;
 }
 
 .box-style03
 {
 	border-bottom: 5px solid #A2B837;
+}
+
+.box-style04
+{
+	border-bottom: 5px solid purple;
+}
+
+.box-style05
+{
+	border-bottom: 5px solid green;
 }
 
 
@@ -541,7 +605,8 @@ a:hover {
 }
 
 .box-style .image {
-	width: 324px;
+	width: 300px;
+	text-align: left;
 }
 
 .box-style .arrow {
@@ -549,13 +614,14 @@ a:hover {
 
 .box-style .content {
 	overflow: hidden;
-	width: 324px;
+	margin: 0 30px;
+	max-width: 900px;
 	padding: 30px;
+	text-align: right;
 }
 
 
 .divider {
 	overflow: hidden;
 	height: 50px;
-	background: url(images/img04.png) no-repeat center top;
 }
