@@ -1,7 +1,6 @@
-<!DOCTYPE html>
 <?php
 require_once ("facebook.php");
-require('GoogleGeocode.php');
+//require('GoogleGeocode.php');
   
   session_start();
   $_SESSION = array();
@@ -15,7 +14,7 @@ require('GoogleGeocode.php');
   $facebook = new Facebook($config);
   $login_params = array(
 		'scope' => 'user_location, user_about_me',
-		'redirect_uri' => 'http://projects.cse.tamu.edu/chaveser',
+		'redirect_uri' => 'http://projects.cse.tamu.edu/crevia1',
 		'display' =>  'page'
   );
   
@@ -134,16 +133,16 @@ require('GoogleGeocode.php');
 		$user_location = $ret_obj2[0]['current_location']['name'];
 		//echo '<pre>Location: ' . $user_location . '</pre>';
 		} catch (FacebookApiException $e) {
-		echo "<br />";
-		echo "Message: " . $e->getMessage();
-		echo "<br />";
-		echo "<br />";
-		echo $e->getTraceAsString();
-		echo "<br />";
-		echo "<br />";
-        echo 'Please <a href="' . $login_url . '">login 1.</a>';
-        error_log($e->getType());
-        error_log($e->getMessage());
+		  echo "<br />";
+		  echo "Message: " . $e->getMessage();
+		  echo "<br />";
+		  echo "<br />";
+		  echo $e->getTraceAsString();
+		  echo "<br />";
+		  echo "<br />";
+        	  echo 'Please <a href="' . $login_url . '">login 1.</a>';
+        	  error_log($e->getType());
+        	  error_log($e->getMessage());
 		}
 	} else {
 	// No user, so print a link for the user to login
@@ -180,80 +179,11 @@ require('GoogleGeocode.php');
 	$doc->save("locations.xml");
 
 	//Load from XML
-	$doc = new DOMDocument();
-	$doc->load('locations.xml');
-
-	$locations_array = $doc->getElementsByTagName("locations");
-	foreach($locations_array as $locs){
-		$locations = $locs->getElementsByTagName("location1");
-		$location = $locations->item(0)->nodeValue;
-	}
-	function replace_whitespaces($string){
-		$new_location = preg_replace('/\s+/', '+',$string);
-		return $new_location;
-	}
-	$new_location = replace_whitespaces($location);
-	$url = "https://maps.googleapis.com/maps/api/place/textsearch/xml";
-	$search_variable = "video+game+stores+near";
-	$api_key = "&sensor=false&key=AIzaSyDhr8wxu4MLOEqivMJc-E16vGxM_qhtgZk";
-	$new_url = $url . "?query=$search_variable$new_location&radius=50" . $api_key;
-	//$_SESSION['new_url']=$new_url;
-
-	$current_file = file_get_contents($new_url);
-	file_put_contents('gamestores.xml', $current_file);
-
-	$doc = new DOMDocument();
-	$doc->load('gamestores.xml');
-
-	$names_array = array();
-	$addr_array = array();
-	$lat_array = array();
-	$lng_array = array();
-	$results = $doc->getElementsByTagName("result");
-	foreach($results as $res){
-		$names = $res->getElementsByTagName("name");
-		$name = $names->item(0)->nodeValue;
-
-		$addresses = $res->getElementsByTagName("formatted_address");
-		$address = $addresses->item(0)->nodeValue;
-
-		$lats = $res->getElementsByTagName("lat");
-		$lat = $lats->item(0)->nodeValue;
-
-		$lngs = $res->getElementsByTagName("lng");
-		$lng = $lngs->item(0)->nodeValue;
-
-		$names_array [] = $name;
-		$addr_array [] = $address;
-		$lat_array [] = $lat;
-		$lng_array [] = $lng;	
-	}
-	$center_lat = $lat_array[0];
-	$center_lng = $lng_array[0];
-	//echo $center_lat;
-	//echo $center_lng;
-	session_start();
-	$_SESSION['cent_lat']=$center_lat;
-	$_SESSION['cent_lng']=$center_lng;
-	session_write_close();
-	$markerDoc = new DOMDocument();
-	$node = $markerDoc->createElement("markers");
-	$parnode = $markerDoc->appendChild($node);
-	$size = sizeof($names_array);
-
-	for($i=0; $i<$size; $i++){
-		$node = $markerDoc->createElement("marker");
-		$newnode = $parnode->appendChild($node);
-		$newnode->setAttribute("name", $names_array[$i]);
-		$newnode->setAttribute("address", $addr_array[$i]);
-		$newnode->setAttribute("lat", $lat_array[$i]);
-		$newnode->setAttribute("lng", $lng_array[$i]);
-	}
-	$markerDoc->save("markerDoc.xml");
   ?>
 	</body>
 </html>
 
+<!DOCTYPE html>
 <!--<html xmlns:fb="http://www.facebook.com/2008/fbml">-->
 <html>
 
@@ -274,8 +204,8 @@ require('GoogleGeocode.php');
 
     <div id="menu" class="container">
       <ul>
-	<li class="current_page_item"><a href="index.php">Home, James.</a></li>
-	<li><a href="facebook_1_pg.php">Arr, take me to your bookface</a></li>
+	<li class="current_page_item"><a href="index.php">Welcome Home!</a></li>
+	<li><a href="searchResults2.php">To the Map!</a></li>
 	<li><a href="contact_us.php">Contact Us!</a></li>
       </ul>
     </div>
@@ -283,31 +213,43 @@ require('GoogleGeocode.php');
 
   <div id="two-column" class="container">
 	<!--Log in link-->
-    <a href="<?php if (!$user_id): echo $loginUrl; ?>""><span style="display: block;">
+    <a href="<?php if (!$user_id): echo $loginUrl; else: echo 'www.facebook.com'; endif ?>"><span style="display: block;">
     <div id="tbox1">
       <div class="box-style box-style02">
 	<div class="content">
 	  <p>
 	  <img src="our_images/gaming.jpeg" alt="Find yourself?" align = left width=300px height=250px hspace = 10px vspace = 10px>
 	    <h2>This snazzy link takes you to Facebook</h2>
-	    (But doesn't log you in meaningfully yet)
+	    (After you log in it brings you back, leaves you there when you log out)
+	    <img src="our_images/logo_facebook.png" width = 20px; height = 20px>
 	  </p>
 	</div>
       </div>
     </div><!--End of tbox1-->
     </span></a>
 
-    <a href="http://maps.google.com"><span style="display: block;">
+    <a href="searchResults2.php"><span style="display: block;">
     <div id="tbox2">
       <div class="box-style box-style01">
 	<div class="content">
-	  <p><img src="our_images/world.jpg" alt="Find the world" align = left width = 300px hspace = 10px vspace = 10px>
-	    <h2>This is your IP<br>I'm a hackr MOFO</h2>
-	    <?php 
-	      $ip=$_SERVER['HTTP_X_FORWARDED_FOR'] ? $_SERVER['HTTP_X_FORWARDED_FOR']:$_SERVER['REMOTE_ADDR'];
-	      echo $ip;
+	  <p>
+          <?php if ($user_id): 
+	    echo '
+		<img src="our_images/world.jpg" alt="Find the world" align = left width = 300px hspace = 10px vspace = 10px>
+		<h2>Welcome, check here to see game stores in your area!</h2>
+		Cool huh?
+	    ';
+	    else:
+	    echo '
+		<img src="our_images/world.jpg" alt="Find the world" align = left width = 300px hspace = 10px vspace = 10px>
+	        <h2>This is your IP<br>I am a hackr MOFO</h2>
+	    ';
+	    endif
+	  ?>
+	    <?php //Grabs IP address 
+	      //$ip=$_SERVER['HTTP_X_FORWARDED_FOR'] ? $_SERVER['HTTP_X_FORWARDED_FOR']:$_SERVER['REMOTE_ADDR'];
+	      //echo $ip;
 	    ?>
-	    (Takes you too Google, because magic leads to more magic)
 	  </p>
 	</div>
       </div>
@@ -321,9 +263,9 @@ require('GoogleGeocode.php');
 <div id="page" class="container">
   <div id = "content">
     <div class="post">
-      <h2 class="title"><a href="facebook_1_pg.php">Find that which you seek here</a></h1>
+      <h2 class="title"><a href="searchResults2.php">Find that which you seek here</a></h1>
       <div class = "entry">
-         <p>Eventually</p>
+         <p>Finally!</p>
       </div>
       <iframe = src="http://www.facebook.com/plugins/like.php?href=http://projects.cse.tamu.edu/crevia1/"
         scrolling = "no" frameborder="0"

@@ -20,8 +20,8 @@
     <div id="menu" class="container">
       <ul>
 	<li><a href="index.php">Home, James</a></li>
-	<li><a href="facebook_1_pg.php">Arr, take me to your bookface</a></li>
-	<li class="current_page_item"><a href="contact_us.php">Contact Us!</a></li>
+	<li><a href="facebook_1_pg.php">To the Maps!</a></li>
+	<li class="current_page_item"><a href="contact_us.php">It's us!</a></li>
       </ul>
     </div>
   </div> <!--End of menu-wrapper-->
@@ -32,9 +32,8 @@
 	<div class="content">
 	  <p><img src="our_images/gaming.jpeg" alt="Find yourself?" align = center height=250px hspace = 10px vspace = 10px>
 	    <h2>Colton Revia</h2>
-	    (Look at that dashing gent, isn't he so suave and elegant?)
+	    (")(=.=)(") <p>
 	    email: crevia1@gmail.com
-	    Steam: vanguardofnight
 	  </p>
 	</div>
       </div>
@@ -45,7 +44,8 @@
 	<div class="content">
 	  <p><img src="our_images/IMAG0089.jpg" alt="Find yourself?" align = center height=250px hspace = 10px vspace = 10px>
 	    <h2>Erick Chaves!</h2>
-	    (Actually, Colton again)
+	    -.- <p>
+	    email: erick.chaves41@gmail.com
 	  </p>
 	</div>
       </div>
@@ -54,9 +54,10 @@
     <div id="tbox3">
       <div class="box-style box-style04">
 	<div class="content">
-	  <p><img src="our_images/IMAG0090.jpg" alt="Find yourself?" align = center height=250px hspace = 10px vspace = 10px>
+	  <p><img src="our_images/itsadog.jpg" alt="Find yourself?" align = center height=250px hspace = 10px vspace = 10px>
 	    <h2>Kristen Musolf!</h2>
-	    (Eventually)
+            :D <p>
+	    email: kristen_musolf@yahoo.com
 	  </p>
 	</div>
       </div>
